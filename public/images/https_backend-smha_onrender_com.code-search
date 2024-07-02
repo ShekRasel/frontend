@@ -1,0 +1,61 @@
+# Query: https://backend-smha.onrender.com
+# ContextLines: 1
+
+12 results - 9 files
+
+src\pages\Orders.jsx:
+  14          const token = localStorage.getItem('token');
+  15:         const response = await axios.get('https://backend-8cip.onrender.com/api/services', {
+  16            headers: {
+
+  31        const token = localStorage.getItem('token');
+  32:       await axios.delete(`https://backend-8cip.onrender.com/api/services/${serviceId}`, {
+  33          headers: {
+
+  53        };
+  54:       const response = await fetch('https://backend-8cip.onrender.com/api/create-checkout-session', {
+  55          method: "POST",
+
+  89              {profilePhoto && (
+  90:               <img src={`https://backend-8cip.onrender.com/${profilePhoto}`} alt="Profile" className="w-16 h-16 rounded-full mb-2" />
+  91              )}
+
+src\pages\SignIn.jsx:
+  20      try {
+  21:       const response = await axios.post('https://backend-8cip.onrender.com/api/signin', { email, password });
+  22        const { profilePhoto, UserId, token } = response.data;
+
+src\pages\SignUp.jsx:
+  45  
+  46:       const response = await axios.post('https://backend-8cip.onrender.com/api/signup', formData, {
+  47          headers: {
+
+src\services\BithdayDetailsPage.jsx:
+  100  
+  101:       await axios.post('https://backend-8cip.onrender.com/api/services', {
+  102          name: birthday.name,
+
+src\services\CostumeDetailsPage.jsx:
+  164    
+  165:       await axios.post('https://backend-8cip.onrender.com/api/services', {
+  166          name: costume.name,
+
+src\services\MakeupDetailsPage.jsx:
+  98    
+  99:       await axios.post('https://backend-8cip.onrender.com/api/services', {
+  100          name: makeup.name,
+
+src\services\OfficeDetailsPage.jsx:
+  100  
+  101:       await axios.post('https://backend-8cip.onrender.com/api/services', {
+  102          name: office.name,
+
+src\services\PhotoDetailsPage.jsx:
+  165    
+  166:       await axios.post('https://backend-8cip.onrender.com/api/services', {
+  167          name: photographer.name,
+
+src\services\VenueDetailsPage.jsx:
+  164    
+  165:       await axios.post('https://backend-8cip.onrender.com/api/services', {
+  166          name: venue.name,
