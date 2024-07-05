@@ -7,6 +7,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FcGoogle } from "react-icons/fc";
 
+
+
 const SignUp = () => {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
@@ -29,7 +31,7 @@ const SignUp = () => {
     event.preventDefault();
     if (!validateEmail(email)) {
       setError('Email or Phone Number wrong');
-      toast.error('Invalid email domain. Please use gmail.com, yahoo.com, or outlook.com.');
+      toast.error('Not a Valid Email');
       return;
     }
 
@@ -50,10 +52,13 @@ const SignUp = () => {
       });
 
       const { token, profilePhoto: responseProfilePhoto } = response.data;
+
+      
       localStorage.setItem('isLoggedIn', true);
-      localStorage.setItem("token", token)
+      localStorage.setItem("token", token);
       localStorage.setItem('profilePhoto', response.data.profilePhoto);
-      login(response.data.profilePhoto);
+      // localStorage.setItem('email', userEmail);
+      login(response.data.profilePhoto,/*userEmail,token*/);
       navigate('/');
     } catch (error) {
       const errorMessage = error.response ? error.response.data : error.message;
@@ -64,6 +69,10 @@ const SignUp = () => {
 
   const handleProfilePhotoChange = (event) => {
     setProfilePhoto(event.target.files[0]);
+  };
+
+  const handleGoogleSignUp = () => {
+    window.open('http://localhost:3000/auth/google', '_self');
   };
 
   return (
@@ -119,7 +128,12 @@ const SignUp = () => {
               </div>
               <button type="submit" className="w-full font-bold bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Sign Up</button>
             </form>
-            <button className="w-full font-bold bg-red-600 text-white py-2 px-4 rounded-lg mt-4 hover:bg-red-500 focus:outline-none focus:bg-red-600 flex items-center justify-center gap-2">Sign Up with Google <FcGoogle className='w-7 h-7'/> </button>
+            <button 
+              className="w-full font-bold bg-red-600 text-white py-2 px-4 rounded-lg mt-4 hover:bg-red-500 focus:outline-none focus:bg-red-600 flex items-center justify-center gap-2" 
+              onClick={handleGoogleSignUp}
+            >
+              Sign Up with Google <FcGoogle className='w-7 h-7'/> 
+            </button>
           </div>
         </div>
       </div>
