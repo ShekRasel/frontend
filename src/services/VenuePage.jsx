@@ -7,62 +7,62 @@ const venues = [
     name: 'Garden Paradise',
     type: 'Outdoor 🌳',
     price: '30000.00 BDT',
-    image: 'services images/venue res and food/pic1.avif'
+    image: 'src/assets/services images/venue res and food/pic1.avif'
   },
   {
     id: 2,
     name: 'Grand Ballroom',
     type: 'Indoor 🏰',
     price: '35000.00 BDT',
-    image: 'services images/venue res and food/pic2.avif'
+    image: 'src/assets/services images/venue res and food/pic2.avif'
   },
   {
     id: 3,
     name: 'Rooftop Lounge',
     type: 'Open-Air 🌇',
     price: '70000.00 BDT',
-    image: 'services images/venue res and food/pic3.avif'
+    image: 'src/assets/services images/venue res and food/pic3.avif'
   },
   {
     id: 4,
     name: 'Starlight Plaza',
     type: 'Beachfront 🏖️',
     price: '90000.00 BDT',
-    image: 'services images/venue res and food/pic4.avif'
+    image: 'src/assets/services images/venue res and food/pic4.avif'
   },
   {
     id: 5,
     name: 'Seaside Villa',
     type: 'Outdoor 🌳',
     price: '83000.00 BDT',
-    image: 'services images/venue res and food/pic5.avif'
+    image: 'src/assets/services images/venue res and food/pic5.avif'
   },
   {
     id: 6,
     name: 'Sapphire Sky Convention Center',
     type: 'Indoor 🏰',
     price: '50300.00 BDT',
-    image: 'services images/venue res and food/pic6.avif'
+    image: 'src/assets/services images/venue res and food/pic6.avif'
   },
   {
     id: 7,
     name: 'The Grand Oak Manor',
     type: 'Open-Air 🌇',
     price: '93500.00 BDT',
-    image: 'services images/venue res and food/pic7.avif'
+    image: 'src/assets/services images/venue res and food/pic7.avif'
   },
   {
     id: 8,
     name: 'The Crystal Ballroom',
     type: 'Beachfront 🏖️',
     price: '65300.00 BDT',
-    image: 'services images/venue res and food/pic8.avif'
+    image: 'src/assets/services images/venue res and food/pic8.avif'
   }
 ];
 
 const VenuePage = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 font-serif">
       <h1 className="text-4xl font-bold text-center mb-4">Venue Reservation</h1>
       <p className="text-xl text-center mb-8">Explore our stunning venues for your special occasion</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext,useState,useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { AuthContext } from '../context/AuthContext'; // Import the AuthContext
@@ -6,6 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FaEye, FaEyeSlash } from 'react-icons/fa'; // Import the eye icons
 import { FcGoogle } from "react-icons/fc";
+import { decode } from 'jwt-js-decode';
 
 const SignIn = () => {
   const [email, setEmail] = useState('');
@@ -18,12 +19,21 @@ const SignIn = () => {
   const handleSignIn = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('https://backend-8cip.onrender.com/api/signin', { email, password });
-      const { profilePhoto, UserId, token } = response.data;
+      const response = await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/signin`, { email, password });
+      const { profilePhoto, token, /*userFirstName, userLastName*/ } = response.data;
+      
+      // console.log(response.data);
+      const decodedToken = decode(token);
+      const userId = decodedToken.payload.id;
 
-      localStorage.setItem("token", token)
-      login(profilePhoto, UserId);
+      localStorage.setItem("token", token);
+      
+      login(profilePhoto, email, userId, token, /*userFirstName, userLastName*/);
       navigate('/');
+      
+    setEmail('');
+    setPassword('');
+
     } catch (error) {
       if (error.response && error.response.status === 401) {
         setError('Please sign up first.');
@@ -36,15 +46,46 @@ const SignIn = () => {
     }
   };
 
+  const handleGoogleSignIn = (token) => {
+    window.location.href = 'http://localhost:3000/auth/google';
+    localStorage.setItem('isLoggedIn', true);
+  };
+  
+  useEffect(() => {
+    const handleRedirect = async () => {
+      try {
+        const urlParams = new URLSearchParams(window.location.search);
+        const token = urlParams.get('token');
+        if (token) {
+          const decodedToken = decode(token);
+          console.log(decodedToken);
+          const { profilePhoto, email: userEmail } = decodedToken.payload;
+
+          localStorage.setItem('token', token);
+          login(profilePhoto, userEmail);
+          navigate('/');
+        } else {
+          // setError('Authentication failed. Please try again.');
+        }
+      } catch (error) {
+        console.error('Error handling Google OAuth callback:', error);
+        setError('Error handling Google OAuth callback. Please try again.');
+      }
+    };
+
+    handleRedirect();
+  }, [navigate, login]);
+  
+  
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100 px-4 sm:px-6 lg:px-8">
-      <div className="flex flex-col sm:flex-row w-full max-w-7xl bg-white rounded-lg shadow-lg overflow-hidden">
+    <div className="flex justify-center items-center min-h-screen bg-gray-100 px-4  sm:px-6 lg:px-8 font-serif">
+      <div className="flex flex-col sm:flex-row w-full  max-w-7xl lg:max-w-5xl bg-white rounded-lg shadow-lg overflow-hidden">
         <div className="sm:w-1/2 flex items-center justify-center p-4 sm:p-8">
           <div className="relative w-full h-full">
-            <img src="images/signinPic.avif" alt="SignIn" className="h-64 sm:h-96 md:h-[750px] w-full object-cover rounded-lg" />
+            <img src="/images/signinPic.avif" alt="SignIn" className="h-64 sm:h-96 md:h-[750px] w-full object-cover rounded-lg" />
             <div className="absolute bottom-0 left-0 right-0 text-center text-white bg-black bg-opacity-5 py-4">
-              <p className="font-bold text-5xl">Welcome back!</p>
-              <p className="text-2xl">Sign in to access your account</p>
+              <p className="font-bold text-5xl text-yellow-300">Welcome back!</p>
+              <p className="text-2xl text-yellow-400">Sign in to access your account</p>
             </div>
           </div>
         </div>
@@ -74,7 +115,9 @@ const SignIn = () => {
                 </div>
               </div>
               <button type="submit" className="w-full font-bold bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Sign In</button>
-              <button className="w-full font-bold bg-red-600 text-white py-2 px-4 rounded-lg mt-4 hover:bg-red-500 focus:outline-none focus:bg-red-600 flex items-center justify-center gap-2">Sign In with Google <FcGoogle className='w-7 h-7'/></button>
+              <button className="w-full font-bold bg-red-600 text-white py-2 px-4 rounded-lg mt-4 hover:bg-red-500 focus:outline-none focus:bg-red-600 flex items-center justify-center gap-2" onClick={handleGoogleSignIn}>
+                Sign In with Google <FcGoogle className='w-7 h-7'/>
+              </button>
             </form>
           </div>
         </div>

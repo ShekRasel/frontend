@@ -46,7 +46,7 @@ const SlideBar = () => {
   }, []);
 
   return (
-    <div className="relative overflow-hidden w-full">
+    <div className="relative overflow-hidden w-full font-serif">
       <div className="flex absolute top-0 left-0 transition-transform duration-1000" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {quotesData.map((quote, index) => (
           <div key={index} className="w-full flex-shrink-0 p-4">

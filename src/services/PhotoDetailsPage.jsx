@@ -12,12 +12,12 @@ const photographers = [
     image: 'src/assets/services images/photographer/pic1.jpeg',
     description: 'Capturing moments with a crafted lens, ensuring each shot tells a story.',
     images: [
-      'services images/photographer/Sub1/image1.jpeg',
-      'services images/photographer/Sub1/image2.jpeg',
-      'services images/photographer/Sub1/image3.webp',
-      'services images/photographer/Sub1/image4.jpeg',
-      'services images/photographer/Sub1/image5.jpeg',
-      'services images/photographer/Sub1/image6.jpeg',
+      'src/assets/services images/photographer/Sub1/image1.jpeg',
+      'src/assets/services images/photographer/Sub1/image2.jpeg',
+      'src/assets/services images/photographer/Sub1/image3.webp',
+      'src/assets/services images/photographer/Sub1/image4.jpeg',
+      'src/assets/services images/photographer/Sub1/image5.webp',
+      'src/assets/services images/photographer/Sub1/image6.jpeg',
     ]
   },
   {
@@ -28,12 +28,12 @@ const photographers = [
     image: 'src/assets/services images/photographer/pic8.jpg',
     description: 'A collective of photographers dedicated to capturing stellar shots.',
     images: [
-      'services images/photographer/Sub2/image1.webp',
-      'services images/photographer/Sub2/image2.jpeg',
-      'services images/photographer/Sub2/image3.webp',
-      'services images/photographer/Sub2/image4.webp',
-      'services images/photographer/Sub2/image5.webp',
-      'services images/photographer/Sub2/image6.webp',
+      'src/assets/services images/photographer/Sub2/image1.webp',
+      'src/assets/services images/photographer/Sub2/image2.jpeg',
+      'src/assets/services images/photographer/Sub2/image3.webp',
+      'src/assets/services images/photographer/Sub2/image4.webp',
+      'src/assets/services images/photographer/Sub2/image5.webp',
+      'src/assets/services images/photographer/Sub2/image6.webp',
     ]
   },
   {
@@ -44,12 +44,12 @@ const photographers = [
     image: 'src/assets/services images/photographer/pic2.jpg',
     description: 'Focused on framing your precious moments with creativity and precision.',
     images: [
-      'services images/photographer/Sub3/image1.webp',
-      'services images/photographer/Sub3/image2.jpeg',
-      'services images/photographer/Sub3/image3.jpeg',
-      'services images/photographer/Sub3/image4.jpeg',
-      'services images/photographer/Sub3/image5.jpeg',
-      'services images/photographer/Sub3/image6.jpeg',
+      'src/assets/services images/photographer/Sub3/image1.webp',
+      'src/assets/services images/photographer/Sub3/image2.jpeg',
+      'src/assets/services images/photographer/Sub3/image3.jpeg',
+      'src/assets/services images/photographer/Sub3/image4.jpeg',
+      'src/assets/services images/photographer/Sub3/image5.jpeg',
+      'src/assets/services images/photographer/Sub3/image6.jpeg',
     ]
   },
   {
@@ -60,12 +60,12 @@ const photographers = [
     image: 'src/assets/services images/photographer/pic3.jpg',
     description: 'Specializing in capturing moments that are out of this world.',
     images: [
-      'services images/photographer/Sub4/image1.webp',
-      'services images/photographer/Sub4/image2.webp',
-      'services images/photographer/Sub4/image3.jpeg',
-      'services images/photographer/Sub4/image4.jpeg',
-      'services images/photographer/Sub4/image5.jpeg',
-      'services images/photographer/Sub4/image6.jpeg',
+      'src/assets/services images/photographer/Sub4/image1.webp',
+      'src/assets/services images/photographer/Sub4/image2.webp',
+      'src/assets/services images/photographer/Sub4/image3.jpeg',
+      'src/assets/services images/photographer/Sub4/image4.jpeg',
+      'src/assets/services images/photographer/Sub4/image5.jpeg',
+      'src/assets/services images/photographer/Sub4/image6.jpeg',
     ]
   },
   {
@@ -76,12 +76,12 @@ const photographers = [
     image: 'src/assets/services images/photographer/pic4.jpeg',
     description: 'Bringing vibrant colors and creativity to every click.',
     images: [
-      'services images/photographer/Sub5/image1.webp',
-      'services images/photographer/Sub5/image2.jpeg',
-      'services images/photographer/Sub5/image3.jpeg',
-      'services images/photographer/Sub5/image4.jpeg',
-      'services images/photographer/Sub5/image5.jpeg',
-      'services images/photographer/Sub5/image6.jpeg',
+      'src/assets/services images/photographer/Sub5/image1.webp',
+      'src/assets/services images/photographer/Sub5/image2.jpeg',
+      'src/assets/services images/photographer/Sub5/image3.jpeg',
+      'src/assets/services images/photographer/Sub5/image4.jpeg',
+      'src/assets/services images/photographer/Sub5/image5.jpeg',
+      'src/assets/services images/photographer/Sub5/image6.jpeg',
     ]
   },
   {
@@ -92,12 +92,12 @@ const photographers = [
     image: 'src/assets/services images/photographer/pic5.jpg',
     description: 'A celebration of moments captured through the lens.',
     images: [
-      'services images/photographer/Sub6/image1.jpeg',
-      'services images/photographer/Sub6/image2.webp',
-      'services images/photographer/Sub6/image3.jpeg',
-      'services images/photographer/Sub6/image4.jpeg',
-      'services images/photographer/Sub6/image5.jpeg',
-      'services images/photographer/Sub6/image6.jpeg',
+      'src/assets/services images/photographer/Sub6/image1.jpeg',
+      'src/assets/services images/photographer/Sub6/image2.webp',
+      'src/assets/services images/photographer/Sub6/image3.jpeg',
+      'src/assets/services images/photographer/Sub6/image4.jpeg',
+      'src/assets/services images/photographer/Sub6/image5.jpeg',
+      'src/assets/services images/photographer/Sub6/image6.jpeg',
     ]
   },
   {
@@ -108,12 +108,12 @@ const photographers = [
     image: 'src/assets/services images/photographer/pic6.jpg',
     description: 'Another perspective from the LensCrafted team, capturing unique stories.',
     images: [
-      'services images/photographer/Sub7/image1.webp',
-      'services images/photographer/Sub7/image2.jpeg',
-      'services images/photographer/Sub7/image3.webp',
-      'services images/photographer/Sub7/image4.jpeg',
-      'services images/photographer/Sub7/image5.jpeg',
-      'services images/photographer/Sub7/image6.jpeg',
+      'src/assets/services images/photographer/Sub7/image1.webp',
+      'src/assets/services images/photographer/Sub7/image2.jpeg',
+      'src/assets/services images/photographer/Sub7/image3.webp',
+      'src/assets/services images/photographer/Sub7/image4.jpeg',
+      'src/assets/services images/photographer/Sub7/image5.jpeg',
+      'src/assets/services images/photographer/Sub7/image6.jpeg',
     ]
   },
   {
@@ -124,12 +124,12 @@ const photographers = [
     image: 'src/assets/services images/photographer/pic7.jpg',
     description: 'Creative and imaginative photography for every occasion.',
     images: [
-      'services images/photographer/Sub8/image1.jpeg',
-      'services images/photographer/Sub8/image2.jpeg',
-      'services images/photographer/Sub8/image3.jpeg',
-      'services images/photographer/Sub8/image4.jpeg',
-      'services images/photographer/Sub8/image5.jpeg',
-      'services images/photographer/Sub8/image6.jpeg',
+      'src/assets/services images/photographer/Sub8/image1.jpeg',
+      'src/assets/services images/photographer/Sub8/image2.jpeg',
+      'src/assets/services images/photographer/Sub8/image3.jpeg',
+      'src/assets/services images/photographer/Sub8/image4.jpeg',
+      'src/assets/services images/photographer/Sub8/image5.jpeg',
+      'src/assets/services images/photographer/Sub8/image6.jpeg',
     ]
   }
 ];
@@ -163,7 +163,7 @@ const PhotoDetailsPage = () => {
         return; // Handle missing token scenario
       }
   
-      await axios.post('https://backend-8cip.onrender.com/api/services', {
+      await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/services`, {
         name: photographer.name,
         price: photographer.price,
         bookedBy: userId
@@ -194,7 +194,7 @@ const PhotoDetailsPage = () => {
               <img
                 key={index}
                 className="w-full h-auto object-contain"
-                src={import.meta.env.BASE_URL+ imgSrc}
+                src={import.meta.env.BASE_URL + imgSrc}
                 alt={`${photographer.name} image ${index + 1}`}
               />
             ))}

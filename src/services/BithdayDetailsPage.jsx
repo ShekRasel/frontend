@@ -12,12 +12,12 @@ const birthdays = [
     image: 'src/assets/services images/birthday/main1.jpg',
     description: 'A magical princess-themed party package perfect for your little one.',
     images: [
-      'services images/birthday/sub1/image1.avif',
-      'services images/birthday/sub1/image2.avif',
-      'services images/birthday/sub1/image3.avif',
-      'services images/birthday/sub1/image4.avif',
-      'services images/birthday/sub1/image5.avif',
-      'services images/birthday/sub1/image6.avif'
+      'src/assets/services images/birthday/sub1/image1.avif',
+      'src/assets/services images/birthday/sub1/image2.avif',
+      'src/assets/services images/birthday/sub1/image3.avif',
+      'src/assets/services images/birthday/sub1/image4.avif',
+      'src/assets/services images/birthday/sub1/image5.avif',
+      'src/assets/services images/birthday/sub1/image6.avif'
     ]
   },
   {
@@ -28,12 +28,12 @@ const birthdays = [
     image: 'src/assets/services images/birthday/main2.jpg',
     description: 'An action-packed superhero-themed party package for your little heroes.',
     images: [
-      'services images/birthday/sub2/image1.avif',
-      'services images/birthday/sub2/image2.avif',
-      'services images/birthday/sub2/image3.avif',
-      'services images/birthday/sub2/image4.avif',
-      'services images/birthday/sub2/image5.avif',
-      'services images/birthday/sub2/image6.avif'
+      'src/assets/services images/birthday/sub2/image1.avif',
+      'src/assets/services images/birthday/sub2/image2.avif',
+      'src/assets/services images/birthday/sub2/image3.avif',
+      'src/assets/services images/birthday/sub2/image4.avif',
+      'src/assets/services images/birthday/sub2/image5.avif',
+      'src/assets/services images/birthday/sub2/image6.avif'
     ]
   },
   {
@@ -44,12 +44,12 @@ const birthdays = [
     image: 'src/assets/services images/birthday/main3.jpg',
     description: 'A wild jungle safari-themed party package for an adventurous celebration.',
     images: [
-      'services images/birthday/sub3/image1.avif',
-      'services images/birthday/sub3/image2.avif',
-      'services images/birthday/sub3/image3.avif',
-      'services images/birthday/sub3/image4.avif',
-      'services images/birthday/sub3/image5.avif',
-      'services images/birthday/sub3/image6.avif'
+      'src/assets/services images/birthday/sub3/image1.avif',
+      'src/assets/services images/birthday/sub3/image2.avif',
+      'src/assets/services images/birthday/sub3/image3.avif',
+      'src/assets/services images/birthday/sub3/image4.avif',
+      'src/assets/services images/birthday/sub3/image5.avif',
+      'src/assets/services images/birthday/sub3/image6.avif'
     ]
   },
   {
@@ -60,12 +60,12 @@ const birthdays = [
     image: 'src/assets/services images/birthday/main4.jpg',
     description: 'An enchanting under-the-sea-themed party package for an unforgettable birthday.',
     images: [
-      'services images/birthday/sub4/image1.avif',
-      'services images/birthday/sub4/image2.avif',
-      'services images/birthday/sub4/image3.avif',
-      'services images/birthday/sub4/image4.avif',
-      'services images/birthday/sub4/image5.avif',
-      'services images/birthday/sub4/image6.avif'
+      'src/assets/services images/birthday/sub4/image1.avif',
+      'src/assets/services images/birthday/sub4/image2.avif',
+      'src/assets/services images/birthday/sub4/image3.avif',
+      'src/assets/services images/birthday/sub4/image4.avif',
+      'src/assets/services images/birthday/sub4/image5.avif',
+      'src/assets/services images/birthday/sub4/image6.avif'
     ]
   },
 ];
@@ -98,7 +98,7 @@ const BirthdayDetailsPage = () => {
         return; // Handle missing token scenario
       }
 
-      await axios.post('https://backend-8cip.onrender.com/api/services', {
+      await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/services`, {
         name: birthday.name,
         price: birthday.price,
         bookedBy: userId
@@ -121,7 +121,7 @@ const BirthdayDetailsPage = () => {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 font-serif">
       <div className="flex flex-col lg:flex-row items-start lg:items-start">
         <div className="lg:w-1/2 lg:max-h-screen lg:overflow-y-auto pr-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -129,7 +129,7 @@ const BirthdayDetailsPage = () => {
               <img
                 key={index}
                 className="w-full h-auto object-contain"
-                src={import.meta.env.BASE_URL+ imgSrc}
+                src={import.meta.env.BASE_URL + imgSrc}
                 alt={`${birthday.name} image ${index + 1}`}
               />
             ))}

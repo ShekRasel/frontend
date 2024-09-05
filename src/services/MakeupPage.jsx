@@ -7,34 +7,34 @@ const makeups = [
     name: 'BlissFul Unions Parlor',
     emoji: '💖',
     price: '15000 BDT',
-    image: 'services images/Makeup and Decoration/pic4.jpg'
+    image: 'src/assets/services images/Makeup and Decoration/pic4.jpg'
   },
   {
     id: 2,
     name: 'Harmony Haven Weddings',
     emoji: '💖',
     price: '5000 BDT',
-    image: 'services images/Makeup and Decoration/pic1.jpg'
+    image: 'src/assets/services images/Makeup and Decoration/pic1.jpg'
   },
   {
     id: 3,
     name: 'Beauty queen',
     emoji: '💖',
     price: '20000 BDT',
-    image: 'services images/Makeup and Decoration/pic2.jpg'
+    image: 'src/assets/services images/Makeup and Decoration/pic2.jpg'
   },
   {
     id: 4,
     name: 'Makeup Around',
     emoji: '💖',
     price: '18000 BDT',
-    image: 'services images/Makeup and Decoration/pic3.jpeg'
+    image: 'src/assets/services images/Makeup and Decoration/pic3.jpeg'
   }
 ];
 
 const MakeupPage = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 font-serif">
       <h1 className="text-4xl font-bold text-center mb-4">Makeup Artists Collection</h1>
       <p className="text-xl text-center mb-8">Explore our collections from different reputed brands</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6">

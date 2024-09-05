@@ -22,6 +22,7 @@ import VenueDetailsPage from './services/VenueDetailsPage';
 import ProtectedRoute from './components/ProtectedRoute';
 import BirthdayDetailsPage from './services/BithdayDetailsPage';
 import OfficeDetailsPage from './services/OfficeDetailsPage';
+import ProductView from './pages/ProductView';
 
 const App = () => {
   return (
@@ -37,6 +38,7 @@ const App = () => {
         } />
         <Route path="/contact" element={<Contact />} />
         <Route path="/add-product" element={<AddProduct />} />
+        <Route path="/product-view/:nid" element={<ProductView />} /> 
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/costume" element={<CostumePage />} />
@@ -51,6 +53,7 @@ const App = () => {
         <Route path="/birthdays/:id" element={<BirthdayDetailsPage />} />
         <Route path="/office" element={<OfficePage/>} />
         <Route path="/offices/:id" element={<OfficeDetailsPage />} />
+        
       </Routes>
       <Footer/>
     </Router>

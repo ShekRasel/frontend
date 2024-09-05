@@ -7,62 +7,62 @@ const photographers = [
     name: 'LensCrafted Perspective',
     price: '7000 BDT',
     emoji: '❤️',
-    image: 'services images/photographer/pic1.jpeg'
+    image: 'src/assets/services images/photographer/pic1.jpeg'
   },
   {
     id: 2,
     name: 'StellarShots Collective',
     price: '5000 BDT',
     emoji: '❤️',
-    image: 'services images/photographer/pic8.jpg'
+    image: 'src/assets/services images/photographer/pic8.jpg'
   },
   {
     id: 3,
     name: 'FocusFrame Creations',
     price: '4500 BDT',
     emoji: '❤️',
-    image: 'services images/photographer/pic2.jpg'
+    image: 'src/assets/services images/photographer/pic2.jpg'
   },
   {
     id: 4,
     name: 'Ecliptic Moments Photography',
     price: '3500 BDT',
     emoji: '❤️',
-    image: 'services images/photographer/pic3.jpg'
+    image: 'src/assets/services images/photographer/pic3.jpg'
   },
   {
     id: 5,
     name: 'ChromaClick Creative',
     price: '3000 BDT',
     emoji: '❤️',
-    image: 'services images/photographer/pic4.jpeg'
+    image: 'src/assets/services images/photographer/pic4.jpeg'
   },
   {
     id: 6,
     name: 'FrameFiesta Photography',
     price: '6000 BDT',
     emoji: '❤️',
-    image: 'services images/photographer/pic5.jpg'
+    image: 'src/assets/services images/photographer/pic5.jpg'
   },
   {
     id: 7,
     name: 'LensCrafted Perspectives',
     price: '5000 BDT',
     emoji: '❤️',
-    image: 'services images/photographer/pic6.jpg'
+    image: 'src/assets/services images/photographer/pic6.jpg'
   },
   {
     id: 8,
     name: 'Creative Click',
     price: '4000 BDT',
     emoji: '❤️',
-    image: 'services images/photographer/pic7.jpg'
+    image: 'src/assets/services images/photographer/pic7.jpg'
   },
 ];
 
 const PhotographerPage = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 font-serif">
       <h1 className="text-4xl font-bold text-center mb-4">Photographers</h1>
       <p className="text-xl text-center mb-8">Discover talented photographers from around the world</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">

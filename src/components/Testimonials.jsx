@@ -64,8 +64,8 @@ const Testimonials = () => {
         <h2 className='text-center text-1xl sm:text-2xl mt-5 bold italic bg-slate-50 px-5'>
         meet their best experience and happy moments provided by us
         </h2>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 bg-gray-50 sm:py-16 lg:py-6 text-4xl">
-            <div className="max-w-6xl mx-auto text-center items-center text-2xl">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 bg-gray-50 sm:py-16 lg:py-6 text-4xl ">
+            <div className="max-w-6xl mx-auto text-center items-center text-2xl md:px-7">
                 <Slider {...settings}>
                     {testimonials.map((testimonial, index) => (
                         <div key={index} className="p-6 bg-white rounded-lg shadow-lg">

@@ -3,7 +3,7 @@ import logo from '../assets/logo.jpg';
 
 const Footer = () => {        
     return (
-        <section className="py-10 bg-gray-100 sm:pt-16 lg:pt-24">
+        <section className="py-10 md:px-16 bg-gray-100 sm:pt-16 lg:pt-24 font-serif">
     <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12">
             <div className="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
@@ -110,7 +110,7 @@ const Footer = () => {
                         <input type="email" name="email" id="email" placeholder="Enter your email" className="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600" />
                     </div>
 
-                    <button type="submit" className=" font-bold inline-flex items-center justify-center px-6 py-4 mt-3 font-semibold text-white transition-all duration-200 bg-blue-600 rounded-md hover:bg-blue-700 focus:bg-blue-700">Subscribe</button>
+                    <button type="submit" className=" inline-flex items-center justify-center px-6 py-4 mt-3 font-semibold text-white transition-all duration-200 bg-blue-600 rounded-md hover:bg-blue-700 focus:bg-blue-700">Subscribe</button>
                 </form>
             </div>
         </div>

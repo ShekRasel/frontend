@@ -10,9 +10,9 @@ const costumes = [
     image: 'src/assets/services images/costume ceremony/main image.jpg',
     description: 'A beautiful bridal gown perfect for your special day.',
     images: [
-      'services images/costume ceremony/main image.jpg',
-      'services images/costume ceremony/additional1.jpg',
-      'services images/costume ceremony/additional2.jpg'
+      'src/assets/services images/costume ceremony/main image.jpg',
+      'src/assets/services images/costume ceremony/additional1.jpg',
+      'src/assets/services images/costume ceremony/additional2.jpg'
     ]
   },
   {
@@ -23,9 +23,9 @@ const costumes = [
     image: 'src/assets/services images/costume ceremony/main1.avif',
     description: 'An aesthetic bridal gown for the modern bride.',
     images: [
-      'services images/costume ceremony/main1.avif',
-      'services images/costume ceremony/additional3.jpg',
-      'services images/costume ceremony/additional4.jpg'
+      'src/assets/services images/costume ceremony/main1.avif',
+      'src/assets/services images/costume ceremony/additional3.jpg',
+      'src/assets/services images/costume ceremony/additional4.jpg'
     ]
   },
   {
@@ -36,9 +36,9 @@ const costumes = [
     image: 'src/assets/services images/costume ceremony/main2.jpg',
     description: 'Stylish Sherwani perfect for traditional ceremonies.',
     images: [
-      'services images/costume ceremony/main2.jpg',
-      'services images/costume ceremony/additional5.jpg',
-      'services images/costume ceremony/additional6.jpg'
+      'src/assets/services images/costume ceremony/main2.jpg',
+      'src/assets/services images/costume ceremony/additional5.jpg',
+      'src/assets/services images/costume ceremony/additional6.jpg'
     ]
   },
   {
@@ -49,9 +49,9 @@ const costumes = [
     image: 'src/assets/services images/costume ceremony/main3.jpg',
     description: 'A classic Indian Sherwani in a wheat color.',
     images: [
-      'services images/costume ceremony/main3.jpg',
-      'services images/costume ceremony/additional7.jpg',
-      'services images/costume ceremony/additional8.jpg'
+      'src/assets/services images/costume ceremony/main3.jpg',
+      'src/assets/services images/costume ceremony/additional7.jpg',
+      'src/assets/services images/costume ceremony/additional8.jpg'
     ]
   },
   {
@@ -62,9 +62,9 @@ const costumes = [
     image: 'src/assets/services images/costume ceremony/main4.jpg',
     description: 'Elegant bridal suits for a sophisticated look.',
     images: [
-      'services images/costume ceremony/main4.jpg',
-      'services images/costume ceremony/additional9.jpg',
-      'services images/costume ceremony/additional10.jpg'
+      'src/assets/services images/costume ceremony/main4.jpg',
+      'src/assets/services images/costume ceremony/additional9.jpg',
+      'src/assets/services images/costume ceremony/additional10.jpg'
     ]
   },
   {
@@ -75,9 +75,9 @@ const costumes = [
     image: 'src/assets/services images/costume ceremony/main5.jpg',
     description: 'Lovely dress for women, perfect for special occasions.',
     images: [
-      'services images/costume ceremony/main5.jpg',
-      'services images/costume ceremony/additional11.jpg',
-      'services images/costume ceremony/additional12.jpg'
+      'src/assets/services images/costume ceremony/main5.jpg',
+      'src/assets/services images/costume ceremony/additional11.jpg',
+      'src/assets/services images/costume ceremony/additional12.jpg'
     ]
   },
   {
@@ -88,9 +88,9 @@ const costumes = [
     image: 'src/assets/services images/costume ceremony/main6.jpg',
     description: 'New stylist dress for women, modern and trendy.',
     images: [
-      'services images/costume ceremony/main6.jpg',
-      'services images/costume ceremony/additional13.jpg',
-      'services images/costume ceremony/additional14.jpg'
+      'src/assets/services images/costume ceremony/main6.jpg',
+      'src/assets/services images/costume ceremony/additional13.jpg',
+      'src/assets/services images/costume ceremony/additional14.jpg'
     ]
   },
   {
@@ -101,16 +101,16 @@ const costumes = [
     image: 'src/assets/services images/costume ceremony/main7.jpg',
     description: 'A stylish jacket for men, perfect for casual and formal events.',
     images: [
-      'services images/costume ceremony/main7.jpg',
-      'services images/costume ceremony/additional15.jpg',
-      'services images/costume ceremony/additional16.jpg'
+      'src/assets/services images/costume ceremony/main7.jpg',
+      'src/assets/services images/costume ceremony/additional15.jpg',
+      'src/assets/services images/costume ceremony/additional16.jpg'
     ]
   },
 ];
 
 const CostumePage = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 font-serif">
       <h1 className="text-4xl font-bold text-center mb-4">Costumes Collection</h1>
       <p className="text-xl text-center mb-8">Explore our collections from different reputed brands</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">

@@ -10,12 +10,12 @@ const makeups = [
     image: 'src/assets/services images/Makeup and Decoration/pic4.jpg',
     description: 'Expert bridal makeup for your special day, ensuring you look flawless and stunning.',
     images: [
-      'services images/Makeup and Decoration/Sub1/image1.jpeg',
-      'services images/Makeup and Decoration/Sub1/image2.jpeg',
-      'services images/Makeup and Decoration/Sub1/image3.jpeg',
-      'services images/Makeup and Decoration/Sub1/image4.jpeg',
-      'services images/Makeup and Decoration/Sub1/image5.webp',
-      'services images/Makeup and Decoration/Sub1/image6.jpeg'
+      'src/assets/services images/Makeup and Decoration/Sub1/image1.jpeg',
+      'src/assets/services images/Makeup and Decoration/Sub1/image2.jpeg',
+      'src/assets/services images/Makeup and Decoration/Sub1/image3.jpeg',
+      'src/assets/services images/Makeup and Decoration/Sub1/image4.jpeg',
+      'src/assets/services images/Makeup and Decoration/Sub1/image5.webp',
+      'src/assets/services images/Makeup and Decoration/Sub1/image6.jpeg'
     ]
   },
   {
@@ -26,12 +26,12 @@ const makeups = [
     image: 'src/assets/services images/Makeup and Decoration/pic1.jpg',
     description: 'Professional makeup services that create a harmonious and beautiful look for weddings.',
     images: [
-      'services images/Makeup and Decoration/Sub2/image1.webp',
-      'services images/Makeup and Decoration/Sub2/image2.jpeg',
-      'services images/Makeup and Decoration/Sub2/image3.jpeg',
-      'services images/Makeup and Decoration/Sub2/image4.jpeg',
-      'services images/Makeup and Decoration/Sub2/image5.jpeg',
-      'services images/Makeup and Decoration/Sub2/image6.webp'
+      'src/assets/services images/Makeup and Decoration/Sub2/image1.webp',
+      'src/assets/services images/Makeup and Decoration/Sub2/image2.jpeg',
+      'src/assets/services images/Makeup and Decoration/Sub2/image3.jpeg',
+      'src/assets/services images/Makeup and Decoration/Sub2/image4.jpeg',
+      'src/assets/services images/Makeup and Decoration/Sub2/image5.jpeg',
+      'src/assets/services images/Makeup and Decoration/Sub2/image6.webp'
     ]
   },
   {
@@ -42,12 +42,12 @@ const makeups = [
     image: 'src/assets/services images/Makeup and Decoration/pic2.jpg',
     description: 'Top-notch beauty services that crown you as the queen of the event.',
     images: [
-      'services images/Makeup and Decoration/Sub3/image1.jpeg',
-      'services images/Makeup and Decoration/Sub3/image2.webp',
-      'services images/Makeup and Decoration/Sub3/image3.jpeg',
-      'services images/Makeup and Decoration/Sub3/image4.webp',
-      'services images/Makeup and Decoration/Sub3/image5.jpeg',
-      'services images/Makeup and Decoration/Sub3/image6.jpeg'
+      'src/assets/services images/Makeup and Decoration/Sub3/image1.jpeg',
+      'src/assets/services images/Makeup and Decoration/Sub3/image2.webp',
+      'src/assets/services images/Makeup and Decoration/Sub3/image3.jpeg',
+      'src/assets/services images/Makeup and Decoration/Sub3/image4.webp',
+      'src/assets/services images/Makeup and Decoration/Sub3/image5.jpeg',
+      'src/assets/services images/Makeup and Decoration/Sub3/image6.jpeg'
     ]
   },
   {
@@ -58,12 +58,12 @@ const makeups = [
     image: 'src/assets/services images/Makeup and Decoration/pic3.jpeg',
     description: 'Affordable and high-quality makeup services for all your special occasions.',
     images: [
-      'services images/Makeup and Decoration/Sub4/image1.jpeg',
-      'services images/Makeup and Decoration/Sub4/image2.jpeg',
-      'services images/Makeup and Decoration/Sub4/image3.jpeg',
-      'services images/Makeup and Decoration/Sub4/image4.jpeg',
-      'services images/Makeup and Decoration/Sub4/image5.jpeg',
-      'services images/Makeup and Decoration/Sub4/image6.jpeg'
+      'src/assets/services images/Makeup and Decoration/Sub4/image1.jpeg',
+      'src/assets/services images/Makeup and Decoration/Sub4/image2.jpeg',
+      'src/assets/services images/Makeup and Decoration/Sub4/image3.jpeg',
+      'src/assets/services images/Makeup and Decoration/Sub4/image4.jpeg',
+      'src/assets/services images/Makeup and Decoration/Sub4/image5.jpeg',
+      'src/assets/services images/Makeup and Decoration/Sub4/image6.jpeg'
     ]
   }
 ];
@@ -96,7 +96,7 @@ const MakeupDetailsPage = () => {
         return; // Handle missing token scenario
       }
   
-      await axios.post('https://backend-8cip.onrender.com/api/services', {
+      await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/services`, {
         name: makeup.name,
         price: makeup.price,
         bookedBy: userId
@@ -119,7 +119,7 @@ const MakeupDetailsPage = () => {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 font-serif">
       <div className="flex flex-col lg:flex-row items-start lg:items-start">
         <div className="lg:w-1/2 lg:max-h-screen lg:overflow-y-auto pr-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -127,7 +127,7 @@ const MakeupDetailsPage = () => {
               <img
                 key={index}
                 className="w-full h-auto object-contain"
-                src={import.meta.env.BASE_URL+ imgSrc}
+                src={import.meta.env.BASE_URL + imgSrc}
                 alt={`${makeup.name} image ${index + 1}`}
               />
             ))}

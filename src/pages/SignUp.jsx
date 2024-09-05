@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext,useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { AuthContext } from '../context/AuthContext';
@@ -6,7 +6,7 @@ import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FcGoogle } from "react-icons/fc";
-
+import { decode } from 'jwt-js-decode';
 
 
 const SignUp = () => {
@@ -45,21 +45,36 @@ const SignUp = () => {
         formData.append('profilePhoto', profilePhoto, profilePhoto.name);
       }
 
-      const response = await axios.post('https://backend-8cip.onrender.com/api/signup', formData, {
+      const response = await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/signup`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
       });
 
-      const { token, profilePhoto: responseProfilePhoto } = response.data;
+      const { token, profilePhoto: responseProfilePhoto, /*userFirstName: responseUserFirstName, userLastName:responseUserLastName*/} = response.data;
 
+      const decodedToken = decode(token);
+      // console.log(response.data);
+      const userEmail = decodedToken.payload.email;
+      const userId = decodedToken.payload.id;
       
       localStorage.setItem('isLoggedIn', true);
       localStorage.setItem("token", token);
       localStorage.setItem('profilePhoto', response.data.profilePhoto);
-      // localStorage.setItem('email', userEmail);
-      login(response.data.profilePhoto,/*userEmail,token*/);
+      // localStorage.setItem('firstName', response.data.userFirstName);
+      // localStorage.setItem('lastName', response.data.userLastName);
+      localStorage.setItem('email', userEmail);
+      localStorage.setItem('email', userId);
+      login(response.data.profilePhoto, userEmail, userId, /*response.data.userFirstName,response.data.userLastName*/);
       navigate('/');
+
+       // Clear form fields after successful sign-up
+    setFirstName('');
+    setLastName('');
+    setEmail('');
+    setPassword('');
+    setProfilePhoto(null);
+
     } catch (error) {
       const errorMessage = error.response ? error.response.data : error.message;
       console.error('Error signing up:', errorMessage);
@@ -76,18 +91,18 @@ const SignUp = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100 px-4 sm:px-6 lg:px-8">
-      <div className="flex flex-col sm:flex-row w-full max-w-7xl  bg-slate-100 rounded-lg shadow-lg overflow-hidden">
+    <div className="flex justify-center items-center min-h-screen bg-gray-100 px-4 sm:px-6 lg:px-8 font-serif">
+      <div className="flex flex-col sm:flex-row w-full max-w-7xl lg:max-w-6xl  bg-slate-100 rounded-lg shadow-lg overflow-hidden">
         <div className="sm:w-1/2 flex items-center justify-center p-4 sm:p-8">
           <div className="relative w-full h-full">
-            <img src="images/signupPic.avif" alt="SignUp" className="h-64 sm:h-96 md:h-[750px] w-full object-cover rounded-lg" />
+            <img src="/images/signupPic.avif" alt="SignUp" className="h-64 sm:h-96 md:h-[750px] w-full object-cover rounded-lg" />
             <div className="absolute bottom-0 left-0 right-0 text-center text-white bg-black bg-opacity-5 py-4">
-              <p className="font-bold text-5xl">Join 35k+ web professionals &</p>
-              <p className="font-bold text-5xl">build your website</p>
-              <p className="text-2xl">Commercial License</p>
-              <p className="text-2xl">Unlimited Exports</p>
-              <p className="text-2xl">120+ Coded Blocks</p>
-              <p className="text-2xl">Design Files Included</p>
+              <p className="font-bold text-3xl md:text-4xl lg:text-5xl">Join 35k+ web professionals &</p>
+              <p className="font-bold  text-3xl md:text-4xl lg:text-5xl">build your website</p>
+              <p className=" text-2xl md:text-4xl lg:text-5xl text-yellow-500">Commercial License</p>
+              <p className="text-xl text-yellow-400">Unlimited Exports</p>
+              <p className="text-xl text-yellow-500">120+ Coded Blocks</p>
+              <p className="text-xl text-yellow-500">Design Files Included</p>
             </div>
           </div>
         </div>

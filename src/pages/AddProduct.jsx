@@ -1,4 +1,6 @@
+// src/components/AddProduct.js
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const AddProduct = () => {
   const [formData, setFormData] = useState({
@@ -13,6 +15,8 @@ const AddProduct = () => {
     photo1: null,
     photo2: null,
   });
+
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value, files } = e.target;
@@ -33,21 +37,23 @@ const AddProduct = () => {
     e.preventDefault();
     // Handle form submission logic
     console.log(formData);
+    navigate(`/product-view/${formData.nid}`, { state: { product: formData } });
   };
 
   return (
-    <div className="container mx-auto py-12 flex justify-center bg-slate-400">
-      <div className="max-w-2xl w-full px-6 py-8 bg-white rounded-lg shadow-md">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">Add Product</h1>
-        <form onSubmit={handleSubmit}>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div className="container mx-auto py-12 flex justify-center font-serif">
+      <div className="max-w-4xl w-full px-6 py-8 bg-slate-200 rounded-lg shadow-md">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-center">Add Product</h1>
+        <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="mb-4">
               <label htmlFor="nid" className="block text-gray-700 font-bold mb-2">NID No</label>
               <input
                 type="text"
                 id="nid"
                 name="nid"
-                className="w-full py-2 px-4 rounded-lg border-2 border-gray-200 focus:outline-none focus:border-blue-500"
+                placeholder="NID Number"
+                className="w-full py-3 px-4 border-2 border-gray-200 focus:outline-none focus:border-blue-500 "
                 value={formData.nid}
                 onChange={handleChange}
                 required
@@ -59,7 +65,8 @@ const AddProduct = () => {
                 type="text"
                 id="agencyName"
                 name="agencyName"
-                className="w-full py-2 px-4 rounded-lg border-2 border-gray-200 focus:outline-none focus:border-blue-500"
+                placeholder="Agency Name"
+                className="w-full py-3 px-4 border-2 border-gray-200 focus:outline-none focus:border-blue-500 "
                 value={formData.agencyName}
                 onChange={handleChange}
                 required
@@ -71,7 +78,8 @@ const AddProduct = () => {
                 type="email"
                 id="agencyEmail"
                 name="agencyEmail"
-                className="w-full py-2 px-4 rounded-lg border-2 border-gray-200 focus:outline-none focus:border-blue-500"
+                placeholder="Agency Email"
+                className="w-full py-3 px-4 border-2 border-gray-200 focus:outline-none focus:border-blue-500 "
                 value={formData.agencyEmail}
                 onChange={handleChange}
                 required
@@ -83,7 +91,8 @@ const AddProduct = () => {
                 type="text"
                 id="phoneNumber"
                 name="phoneNumber"
-                className="w-full py-2 px-4 rounded-lg border-2 border-gray-200 focus:outline-none focus:border-blue-500"
+                placeholder="Phone Number"
+                className="w-full py-3 px-4 border-2 border-gray-200 focus:outline-none focus:border-blue-500 "
                 value={formData.phoneNumber}
                 onChange={handleChange}
                 required
@@ -95,7 +104,8 @@ const AddProduct = () => {
                 type="text"
                 id="servicesCategory"
                 name="servicesCategory"
-                className="w-full py-2 px-4 rounded-lg border-2 border-gray-200 focus:outline-none focus:border-blue-500"
+                placeholder="Services Category"
+                className="w-full py-3 px-4 border-2 border-gray-200 focus:outline-none focus:border-blue-500 "
                 value={formData.servicesCategory}
                 onChange={handleChange}
                 required
@@ -107,7 +117,8 @@ const AddProduct = () => {
                 type="text"
                 id="priceRating"
                 name="priceRating"
-                className="w-full py-2 px-4 rounded-lg border-2 border-gray-200 focus:outline-none focus:border-blue-500"
+                placeholder="Price Rating"
+                className="w-full py-3 px-4 border-2 border-gray-200 focus:outline-none focus:border-blue-500 "
                 value={formData.priceRating}
                 onChange={handleChange}
                 required
@@ -119,48 +130,57 @@ const AddProduct = () => {
                 type="text"
                 id="businessCategory"
                 name="businessCategory"
-                className="w-full py-2 px-4 rounded-lg border-2 border-gray-200 focus:outline-none focus:border-blue-500"
+                placeholder="Business Category"
+                className="w-full py-3 px-4 border-2 border-gray-200 focus:outline-none focus:border-blue-500 "
                 value={formData.businessCategory}
                 onChange={handleChange}
                 required
               />
             </div>
-            <div className="mb-4">
+            <div className="mb-4 col-span-2">
               <label htmlFor="address" className="block text-gray-700 font-bold mb-2">Address</label>
               <input
                 type="text"
                 id="address"
                 name="address"
-                className="w-full py-2 px-4 rounded-lg border-2 border-gray-200 focus:outline-none focus:border-blue-500"
+                placeholder="Address"
+                className="w-full py-3 px-4 border-2 border-gray-200 focus:outline-none focus:border-blue-500 "
                 value={formData.address}
                 onChange={handleChange}
                 required
               />
             </div>
-            <div className="mb-4">
+            <div className="mb-4 col-span-2">
               <label htmlFor="photo1" className="block text-gray-700 font-bold mb-2">Upload Your Events Photo</label>
               <input
                 type="file"
                 id="photo1"
                 name="photo1"
-                className="w-full py-2 px-4 rounded-lg border-2 border-gray-200 focus:outline-none focus:border-blue-500"
+                className="w-full py-3 px-4 border-2 border-gray-200 focus:outline-none focus:border-blue-500"
                 onChange={handleChange}
                 required
               />
             </div>
-            <div className="mb-4">
-              <label htmlFor="photo2" className="block text-gray-700 font-bold mb-2">Upload Your Business linsence</label>
+            <div className="mb-4 col-span-2">
+              <label htmlFor="photo2" className="block text-gray-700 font-bold mb-2">Upload Your Business License</label>
               <input
                 type="file"
                 id="photo2"
                 name="photo2"
-                className="w-full py-2 px-4 rounded-lg border-2 border-gray-200 focus:outline-none focus:border-blue-500"
+                className="w-full py-3 px-4 border-2 border-gray-200 focus:outline-none focus:border-blue-500"
                 onChange={handleChange}
                 required
               />
             </div>
           </div>
-          <button type="submit" className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Add Product</button>
+          <div className="mb-4 col-span-2">
+            <button
+              type="submit"
+              className="w-full bg-blue-500 text-white py-2 px-4  hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+            >
+              Add Product
+            </button>
+          </div>
         </form>
       </div>
     </div>

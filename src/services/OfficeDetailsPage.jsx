@@ -12,12 +12,12 @@ const offices = [
     image: 'src/assets/services images/office/main1.jpg',
     description: 'A complete executive office setup including furniture, decor, and organization solutions.',
     images: [
-      'services images/office/sub1/image1.avif',
-      'services images/office/sub1/image2.avif',
-      'services images/office/sub1/image3.avif',
-      'services images/office/sub1/image4.avif',
-      'services images/office/sub1/image5.avif',
-      'services images/office/sub1/image6.avif'
+      'src/assets/services images/office/sub1/image1.avif',
+      'src/assets/services images/office/sub1/image2.avif',
+      'src/assets/services images/office/sub1/image3.avif',
+      'src/assets/services images/office/sub1/image4.avif',
+      'src/assets/services images/office/sub1/image5.avif',
+      'src/assets/services images/office/sub1/image6.avif'
     ]
   },
   {
@@ -28,12 +28,12 @@ const offices = [
     image: 'src/assets/services images/office/main2.jpg',
     description: 'A modern office setup ideal for tech startups with open spaces and innovative furniture.',
     images: [
-      'services images/office/sub2/image1.avif',
-      'services images/office/sub2/image2.avif',
-      'services images/office/sub2/image3.avif',
-      'services images/office/sub2/image4.avif',
-      'services images/office/sub2/image5.avif',
-      'services images/office/sub2/image6.avif'
+      'src/assets/services images/office/sub2/image1.avif',
+      'src/assets/services images/office/sub2/image2.avif',
+      'src/assets/services images/office/sub2/image3.avif',
+      'src/assets/services images/office/sub2/image4.avif',
+      'src/assets/services images/office/sub2/image5.avif',
+      'src/assets/services images/office/sub2/image6.avif'
     ]
   },
   {
@@ -44,12 +44,12 @@ const offices = [
     image: 'src/assets/services images/office/main3.jpg',
     description: 'A vibrant and dynamic workspace setup designed for creative teams.',
     images: [
-      'services images/office/sub3/image1.avif',
-      'services images/office/sub3/image2.avif',
-      'services images/office/sub3/image3.avif',
-      'services images/office/sub3/image4.avif',
-      'services images/office/sub3/image5.avif',
-      'services images/office/sub3/image6.avif'
+      'src/assets/services images/office/sub3/image1.avif',
+      'src/assets/services images/office/sub3/image2.avif',
+      'src/assets/services images/office/sub3/image3.avif',
+      'src/assets/services images/office/sub3/image4.avif',
+      'src/assets/services images/office/sub3/image5.avif',
+      'src/assets/services images/office/sub3/image6.avif'
     ]
   },
   {
@@ -60,12 +60,12 @@ const offices = [
     image: 'src/assets/services images/office/main4.jpg',
     description: 'A professional and sleek office design for corporate environments.',
     images: [
-      'services images/office/sub4/image1.avif',
-      'services images/office/sub4/image2.avif',
-      'services images/office/sub4/image3.avif',
-      'services images/office/sub4/image4.avif',
-      'services images/office/sub4/image5.avif',
-      'services images/office/sub4/image6.avif'
+      'src/assets/services images/office/sub4/image1.avif',
+      'src/assets/services images/office/sub4/image2.avif',
+      'src/assets/services images/office/sub4/image3.avif',
+      'src/assets/services images/office/sub4/image4.avif',
+      'src/assets/services images/office/sub4/image5.avif',
+      'src/assets/services images/office/sub4/image6.avif'
     ]
   },
 ];
@@ -98,7 +98,7 @@ const OfficeDetailsPage = () => {
         return; // Handle missing token scenario
       }
 
-      await axios.post('https://backend-8cip.onrender.com/api/services', {
+      await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/services`, {
         name: office.name,
         price: office.price,
         bookedBy: userId
@@ -121,7 +121,7 @@ const OfficeDetailsPage = () => {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 font-serif">
       <div className="flex flex-col lg:flex-row items-start lg:items-start">
         <div className="lg:w-1/2 lg:max-h-screen lg:overflow-y-auto pr-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

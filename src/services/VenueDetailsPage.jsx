@@ -11,12 +11,12 @@ const venues = [
     image: 'src/assets/services images/venue res and food/pic1.avif',
     description: 'A beautiful garden venue perfect for outdoor weddings and events.',
     images: [
-      'services images/venue res and food/Sub1/image1.jpeg',
-      'services images/venue res and food/Sub1/image2.jpeg',
-      'services images/venue res and food/Sub1/image3.jpeg',
-      'services images/venue res and food/Sub1/image4.jpeg',
-      'services images/venue res and food/Sub1/image5.jpeg',
-      'services images/venue res and food/Sub1/image6.jpeg'
+      'src/assets/services images/venue res and food/Sub1/image1.jpeg',
+      'src/assets/services images/venue res and food/Sub1/image2.jpeg',
+      'src/assets/services images/venue res and food/Sub1/image3.jpeg',
+      'src/assets/services images/venue res and food/Sub1/image4.jpeg',
+      'src/assets/services images/venue res and food/Sub1/image5.jpeg',
+      'src/assets/services images/venue res and food/Sub1/image6.jpeg'
     ]
   },
   {
@@ -27,12 +27,12 @@ const venues = [
     image: 'src/assets/services images/venue res and food/pic2.avif',
     description: 'An elegant indoor ballroom ideal for grand occasions and ceremonies.',
     images: [
-      'services images/venue res and food/Sub2/image1.jpeg',
-      'services images/venue res and food/Sub2/image2.jpeg',
-      'services images/venue res and food/Sub2/image3.jpeg',
-      'services images/venue res and food/Sub2/image4.jpeg',
-      'services images/venue res and food/Sub2/image5.jpeg',
-      'services images/venue res and food/Sub2/image6.jpeg'
+      'src/assets/services images/venue res and food/Sub2/image1.jpeg',
+      'src/assets/services images/venue res and food/Sub2/image2.jpeg',
+      'src/assets/services images/venue res and food/Sub2/image3.jpeg',
+      'src/assets/services images/venue res and food/Sub2/image4.jpeg',
+      'src/assets/services images/venue res and food/Sub2/image5.jpeg',
+      'src/assets/services images/venue res and food/Sub2/image6.jpeg'
     ]
   },
   {
@@ -43,12 +43,12 @@ const venues = [
     image: 'src/assets/services images/venue res and food/pic3.avif',
     description: 'A stunning rooftop lounge with panoramic views of the city.',
     images: [
-      'services images/venue res and food/Sub3/image1.jpeg',
-      'services images/venue res and food/Sub3/image2.webp',
-      'services images/venue res and food/Sub3/image3.webp',
-      'services images/venue res and food/Sub3/image4.jpeg',
-      'services images/venue res and food/Sub3/image5.jpeg',
-      'services images/venue res and food/Sub3/image6.jpeg'
+      'src/assets/services images/venue res and food/Sub3/image1.jpeg',
+      'src/assets/services images/venue res and food/Sub3/image2.webp',
+      'src/assets/services images/venue res and food/Sub3/image3.webp',
+      'src/assets/services images/venue res and food/Sub3/image4.jpeg',
+      'src/assets/services images/venue res and food/Sub3/image5.jpeg',
+      'src/assets/services images/venue res and food/Sub3/image6.jpeg'
     ]
   },
   {
@@ -59,12 +59,12 @@ const venues = [
     image: 'src/assets/services images/venue res and food/pic4.avif',
     description: 'A picturesque beachfront venue perfect for romantic beach weddings.',
     images: [
-      'services images/venue res and food/Sub4/image1.jpeg',
-      'services images/venue res and food/Sub4/image2.jpeg',
-      'services images/venue res and food/Sub4/image3.jpeg',
-      'services images/venue res and food/Sub4/image4.jpeg',
-      'services images/venue res and food/Sub4/image5.jpeg',
-      'services images/venue res and food/Sub4/image6.jpeg'
+      'src/assets/services images/venue res and food/Sub4/image1.jpeg',
+      'src/assets/services images/venue res and food/Sub4/image2.jpeg',
+      'src/assets/services images/venue res and food/Sub4/image3.jpeg',
+      'src/assets/services images/venue res and food/Sub4/image4.jpeg',
+      'src/assets/services images/venue res and food/Sub4/image5.jpeg',
+      'src/assets/services images/venue res and food/Sub4/image6.jpeg'
     ]
   },
   {
@@ -75,12 +75,12 @@ const venues = [
     image: 'src/assets/services images/venue res and food/pic5.avif',
     description: 'A charming villa by the sea, ideal for intimate outdoor events.',
     images: [
-      'services images/venue res and food/Sub5/image1.jpeg',
-      'services images/venue res and food/Sub5/image2.jpeg',
-      'services images/venue res and food/Sub5/image3.jpeg',
-      'services images/venue res and food/Sub5/image4.jpeg',
-      'services images/venue res and food/Sub5/image5.jpeg',
-      'services images/venue res and food/Sub5/image6.jpeg'
+      'src/assets/services images/venue res and food/Sub5/image1.jpeg',
+      'src/assets/services images/venue res and food/Sub5/image2.jpeg',
+      'src/assets/services images/venue res and food/Sub5/image3.jpeg',
+      'src/assets/services images/venue res and food/Sub5/image4.jpeg',
+      'src/assets/services images/venue res and food/Sub5/image5.jpeg',
+      'src/assets/services images/venue res and food/Sub5/image6.jpeg'
     ]
   },
   {
@@ -91,12 +91,12 @@ const venues = [
     image: 'src/assets/services images/venue res and food/pic6.avif',
     description: 'Another elegant indoor ballroom for luxurious events.',
     images: [
-      'services images/venue res and food/Sub6/image1.jpeg',
-      'services images/venue res and food/Sub6/image2.webp',
-      'services images/venue res and food/Sub6/image3.jpeg',
-      'services images/venue res and food/Sub6/image4.jpeg',
-      'services images/venue res and food/Sub6/image5.webp',
-      'services images/venue res and food/Sub6/image6.jpeg'
+      'src/assets/services images/venue res and food/Sub6/image1.jpeg',
+      'src/assets/services images/venue res and food/Sub6/image2.webp',
+      'src/assets/services images/venue res and food/Sub6/image3.jpeg',
+      'src/assets/services images/venue res and food/Sub6/image4.jpeg',
+      'src/assets/services images/venue res and food/Sub6/image5.webp',
+      'src/assets/services images/venue res and food/Sub6/image6.jpeg'
     ]
   },
   {
@@ -107,12 +107,12 @@ const venues = [
     image: 'src/assets/services images/venue res and food/pic7.avif',
     description: 'An open-air rooftop venue with stunning views and ambiance.',
     images: [
-      'services images/venue res and food/Sub7/image1.jpeg',
-      'services images/venue res and food/Sub7/image2.jpeg',
-      'services images/venue res and food/Sub7/image3.jpeg',
-      'services images/venue res and food/Sub7/image4.jpeg',
-      'services images/venue res and food/Sub7/image5.jpeg',
-      'services images/venue res and food/Sub7/image6.jpeg'
+      'src/assets/services images/venue res and food/Sub7/image1.jpeg',
+      'src/assets/services images/venue res and food/Sub7/image2.jpeg',
+      'src/assets/services images/venue res and food/Sub7/image3.jpeg',
+      'src/assets/services images/venue res and food/Sub7/image4.jpeg',
+      'src/assets/services images/venue res and food/Sub7/image5.jpeg',
+      'src/assets/services images/venue res and food/Sub7/image6.jpeg'
     ]
   },
   {
@@ -123,12 +123,12 @@ const venues = [
     image: 'src/assets/services images/venue res and food/pic8.avif',
     description: 'A luxurious beachfront ballroom for unforgettable events.',
     images: [
-      'services images/venue res and food/Sub8/image1.jpeg',
-      'services images/venue res and food/Sub8/image2.jpeg',
-      'services images/venue res and food/Sub8/image3.jpeg',
-      'services images/venue res and food/Sub8/image4.jpeg',
-      'services images/venue res and food/Sub8/image5.jpeg',
-      'services images/venue res and food/Sub8/image6.jpeg'
+      'src/assets/services images/venue res and food/Sub8/image1.jpeg',
+      'src/assets/services images/venue res and food/Sub8/image2.jpeg',
+      'src/assets/services images/venue res and food/Sub8/image3.jpeg',
+      'src/assets/services images/venue res and food/Sub8/image4.jpeg',
+      'src/assets/services images/venue res and food/Sub8/image5.jpeg',
+      'src/assets/services images/venue res and food/Sub8/image6.jpeg'
     ]
   }
 ];
@@ -162,7 +162,7 @@ const VenueDetailsPage = () => {
         return; // Handle missing token scenario
       }
   
-      await axios.post('https://backend-8cip.onrender.com/api/services', {
+      await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/services`, {
         name: venue.name,
         price: venue.price,
         bookedBy: userId
@@ -185,7 +185,7 @@ const VenueDetailsPage = () => {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 font-serif">
       <div className="flex flex-col lg:flex-row items-start lg:items-start">
         <div className="lg:w-1/2 lg:max-h-screen lg:overflow-y-auto pr-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -193,7 +193,7 @@ const VenueDetailsPage = () => {
               <img
                 key={index}
                 className="w-full h-auto object-contain"
-                src={import.meta.env.BASE_URL+ imgSrc}
+                src={import.meta.env.BASE_URL + imgSrc}
                 alt={`${venue.name} image ${index + 1}`}
               />
             ))}
