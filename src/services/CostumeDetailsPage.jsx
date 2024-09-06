@@ -12,12 +12,12 @@ const costumes = [
     image: 'src/assets/services images/costume ceremony/main image.jpg',
     description: 'A beautiful bridal gown perfect for your special day.',
     images: [
-      'src/assets/services images/costume ceremony/Sub1/images1.jpeg',
-      'src/assets/services images/costume ceremony/Sub1/images2.jpeg',
-      'src/assets/services images/costume ceremony/Sub1/images3.avif',
-      'src/assets/services images/costume ceremony/Sub1/images4.avif',
-      'src/assets/services images/costume ceremony/Sub1/images5.avif',
-      'src/assets/services images/costume ceremony/Sub1/images6.avif'
+      'services images/costume ceremony/Sub1/images1.jpeg',
+      'services images/costume ceremony/Sub1/images2.jpeg',
+      'services images/costume ceremony/Sub1/images3.avif',
+      'services images/costume ceremony/Sub1/images4.avif',
+      'services images/costume ceremony/Sub1/images5.avif',
+      'services images/costume ceremony/Sub1/images6.avif'
     ]
   },
   {
@@ -28,12 +28,12 @@ const costumes = [
     image: 'src/assets/services images/costume ceremony/main1.avif',
     description: ' This could be a boutique or online retailer specializing in unique, trendsetting gowns. They might feature a curated selection from various designers known for their distinctive and fashion-forward aesthetic',
     images: [
-      'src/assets/services images/costume ceremony/Sub2/images1.avif',
-      'src/assets/services images/costume ceremony/Sub2/images2.avif',
-      'src/assets/services images/costume ceremony/Sub2/images3.avif',
-      'src/assets/services images/costume ceremony/Sub2/images4.avif',
-      'src/assets/services images/costume ceremony/Sub2/images5.avif',
-      'src/assets/services images/costume ceremony/Sub2/images6.avif'
+      'services images/costume ceremony/Sub2/images1.avif',
+      'services images/costume ceremony/Sub2/images2.avif',
+      'services images/costume ceremony/Sub2/images3.avif',
+      'services images/costume ceremony/Sub2/images4.avif',
+      'services images/costume ceremony/Sub2/images5.avif',
+      'services images/costume ceremony/Sub2/images6.avif'
     ]
   },
   {
@@ -44,12 +44,12 @@ const costumes = [
     image: 'src/assets/services images/costume ceremony/main2.jpg',
     description: 'Stylish Sherwani perfect for traditional ceremonies.',
     images: [
-      'src/assets/services images/costume ceremony/Sub3/images1.avif',
-      'src/assets/services images/costume ceremony/Sub3/images2.avif',
-      'src/assets/services images/costume ceremony/Sub3/images3.avif',
-      'src/assets/services images/costume ceremony/Sub3/images4.avif',
-      'src/assets/services images/costume ceremony/Sub3/images5.jpeg',
-      'src/assets/services images/costume ceremony/Sub3/images6.jpeg'
+      'services images/costume ceremony/Sub3/images1.avif',
+      'services images/costume ceremony/Sub3/images2.avif',
+      'services images/costume ceremony/Sub3/images3.avif',
+      'services images/costume ceremony/Sub3/images4.avif',
+      'services images/costume ceremony/Sub3/images5.jpeg',
+      'services images/costume ceremony/Sub3/images6.jpeg'
     ]
   },
   {
@@ -60,12 +60,12 @@ const costumes = [
     image: 'src/assets/services images/costume ceremony/main3.jpg',
     description: 'A classic Indian Sherwani in a wheat color.',
     images: [
-      'src/assets/services images/costume ceremony/Sub4/images1.jpeg',
-      'src/assets/services images/costume ceremony/Sub4/images2.jpeg',
-      'src/assets/services images/costume ceremony/Sub4/images3.jpeg',
-      'src/assets/services images/costume ceremony/Sub4/images4.jpeg',
-      'src/assets/services images/costume ceremony/Sub4/images5.jpeg',
-      'src/assets/services images/costume ceremony/Sub4/images6.jpeg'
+      'services images/costume ceremony/Sub4/images1.jpeg',
+      'services images/costume ceremony/Sub4/images2.jpeg',
+      'services images/costume ceremony/Sub4/images3.jpeg',
+      'services images/costume ceremony/Sub4/images4.jpeg',
+      'services images/costume ceremony/Sub4/images5.jpeg',
+      'services images/costume ceremony/Sub4/images6.jpeg'
     ]
   },
   {
@@ -76,12 +76,12 @@ const costumes = [
     image: 'src/assets/services images/costume ceremony/main4.jpg',
     description: 'Elegant bridal suits for a sophisticated look.',
     images: [
-      'src/assets/services images/costume ceremony/Sub5/images1.jpeg',
-      'src/assets/services images/costume ceremony/Sub5/images2.webp',
-      'src/assets/services images/costume ceremony/Sub5/images3.jpeg',
-      'src/assets/services images/costume ceremony/Sub5/images4.jpeg',
-      'src/assets/services images/costume ceremony/Sub5/images5.jpeg',
-      'src/assets/services images/costume ceremony/Sub5/images6.webp'
+      'services images/costume ceremony/Sub5/images1.jpeg',
+      'services images/costume ceremony/Sub5/images2.webp',
+      'services images/costume ceremony/Sub5/images3.jpeg',
+      'services images/costume ceremony/Sub5/images4.jpeg',
+      'services images/costume ceremony/Sub5/images5.jpeg',
+      'services images/costume ceremony/Sub5/images6.webp'
     ]
   },
   {
@@ -92,12 +92,12 @@ const costumes = [
     image: 'src/assets/services images/costume ceremony/main5.jpg',
     description: 'Lovely dress for women, perfect for special occasions.',
     images: [
-      'src/assets/services images/costume ceremony/Sub6/images1.jpeg',
-      'src/assets/services images/costume ceremony/Sub6/images2.jpeg',
-      'src/assets/services images/costume ceremony/Sub6/images3.jpeg',
-      'src/assets/services images/costume ceremony/Sub6/images4.webp',
-      'src/assets/services images/costume ceremony/Sub6/images5.webp',
-      'src/assets/services images/costume ceremony/Sub6/images6.webp'
+      'services images/costume ceremony/Sub6/images1.jpeg',
+      'services images/costume ceremony/Sub6/images2.jpeg',
+      'services images/costume ceremony/Sub6/images3.jpeg',
+      'services images/costume ceremony/Sub6/images4.webp',
+      'services images/costume ceremony/Sub6/images5.webp',
+      'services images/costume ceremony/Sub6/images6.webp'
     ]
   },
   {
@@ -108,12 +108,12 @@ const costumes = [
     image: 'src/assets/services images/costume ceremony/main6.jpg',
     description: 'New stylist dress for women, modern and trendy.',
     images: [
-      'src/assets/services images/costume ceremony/Sub7/images1.jpeg',
-      'src/assets/services images/costume ceremony/Sub7/images2.webp',
-      'src/assets/services images/costume ceremony/Sub7/images3.jpeg',
-      'src/assets/services images/costume ceremony/Sub7/images4.jpeg',
-      'src/assets/services images/costume ceremony/Sub7/images5.webp',
-      'src/assets/services images/costume ceremony/Sub7/images6.jpeg'
+      'services images/costume ceremony/Sub7/images1.jpeg',
+      'services images/costume ceremony/Sub7/images2.webp',
+      'services images/costume ceremony/Sub7/images3.jpeg',
+      'services images/costume ceremony/Sub7/images4.jpeg',
+      'services images/costume ceremony/Sub7/images5.webp',
+      'services images/costume ceremony/Sub7/images6.jpeg'
     ]
   },
   {
@@ -124,12 +124,12 @@ const costumes = [
     image: 'src/assets/services images/costume ceremony/main7.jpg',
     description: 'A stylish jacket for men, perfect for casual and formal events.',
     images: [
-      'src/assets/services images/costume ceremony/Sub8/images1.jpeg',
-      'src/assets/services images/costume ceremony/Sub8/images2.jpeg',
-      'src/assets/services images/costume ceremony/Sub8/images3.jpeg',
-      'src/assets/services images/costume ceremony/Sub8/images4.jpeg',
-      'src/assets/services images/costume ceremony/Sub8/images5.jpeg',
-      'src/assets/services images/costume ceremony/Sub8/images6.jpeg'
+      'services images/costume ceremony/Sub8/images1.jpeg',
+      'services images/costume ceremony/Sub8/images2.jpeg',
+      'services images/costume ceremony/Sub8/images3.jpeg',
+      'services images/costume ceremony/Sub8/images4.jpeg',
+      'services images/costume ceremony/Sub8/images5.jpeg',
+      'services images/costume ceremony/Sub8/images6.jpeg'
     ]
   },
 ];

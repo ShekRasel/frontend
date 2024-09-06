@@ -7,56 +7,56 @@ const photographers = [
     name: 'LensCrafted Perspective',
     price: '7000 BDT',
     emoji: '❤️',
-    image: 'src/assets/services images/photographer/pic1.jpeg'
+    image: 'services images/photographer/pic1.jpeg'
   },
   {
     id: 2,
     name: 'StellarShots Collective',
     price: '5000 BDT',
     emoji: '❤️',
-    image: 'src/assets/services images/photographer/pic8.jpg'
+    image: 'services images/photographer/pic8.jpg'
   },
   {
     id: 3,
     name: 'FocusFrame Creations',
     price: '4500 BDT',
     emoji: '❤️',
-    image: 'src/assets/services images/photographer/pic2.jpg'
+    image: 'services images/photographer/pic2.jpg'
   },
   {
     id: 4,
     name: 'Ecliptic Moments Photography',
     price: '3500 BDT',
     emoji: '❤️',
-    image: 'src/assets/services images/photographer/pic3.jpg'
+    image: 'services images/photographer/pic3.jpg'
   },
   {
     id: 5,
     name: 'ChromaClick Creative',
     price: '3000 BDT',
     emoji: '❤️',
-    image: 'src/assets/services images/photographer/pic4.jpeg'
+    image: 'services images/photographer/pic4.jpeg'
   },
   {
     id: 6,
     name: 'FrameFiesta Photography',
     price: '6000 BDT',
     emoji: '❤️',
-    image: 'src/assets/services images/photographer/pic5.jpg'
+    image: 'services images/photographer/pic5.jpg'
   },
   {
     id: 7,
     name: 'LensCrafted Perspectives',
     price: '5000 BDT',
     emoji: '❤️',
-    image: 'src/assets/services images/photographer/pic6.jpg'
+    image: 'services images/photographer/pic6.jpg'
   },
   {
     id: 8,
     name: 'Creative Click',
     price: '4000 BDT',
     emoji: '❤️',
-    image: 'src/assets/services images/photographer/pic7.jpg'
+    image: 'services images/photographer/pic7.jpg'
   },
 ];
 

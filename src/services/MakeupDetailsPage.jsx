@@ -10,12 +10,12 @@ const makeups = [
     image: 'src/assets/services images/Makeup and Decoration/pic4.jpg',
     description: 'Expert bridal makeup for your special day, ensuring you look flawless and stunning.',
     images: [
-      'src/assets/services images/Makeup and Decoration/Sub1/image1.jpeg',
-      'src/assets/services images/Makeup and Decoration/Sub1/image2.jpeg',
-      'src/assets/services images/Makeup and Decoration/Sub1/image3.jpeg',
-      'src/assets/services images/Makeup and Decoration/Sub1/image4.jpeg',
-      'src/assets/services images/Makeup and Decoration/Sub1/image5.webp',
-      'src/assets/services images/Makeup and Decoration/Sub1/image6.jpeg'
+      'services images/Makeup and Decoration/Sub1/image1.jpeg',
+      'services images/Makeup and Decoration/Sub1/image2.jpeg',
+      'services images/Makeup and Decoration/Sub1/image3.jpeg',
+      'services images/Makeup and Decoration/Sub1/image4.jpeg',
+      'services images/Makeup and Decoration/Sub1/image5.webp',
+      'services images/Makeup and Decoration/Sub1/image6.jpeg'
     ]
   },
   {
@@ -26,12 +26,12 @@ const makeups = [
     image: 'src/assets/services images/Makeup and Decoration/pic1.jpg',
     description: 'Professional makeup services that create a harmonious and beautiful look for weddings.',
     images: [
-      'src/assets/services images/Makeup and Decoration/Sub2/image1.webp',
-      'src/assets/services images/Makeup and Decoration/Sub2/image2.jpeg',
-      'src/assets/services images/Makeup and Decoration/Sub2/image3.jpeg',
-      'src/assets/services images/Makeup and Decoration/Sub2/image4.jpeg',
-      'src/assets/services images/Makeup and Decoration/Sub2/image5.jpeg',
-      'src/assets/services images/Makeup and Decoration/Sub2/image6.webp'
+      'services images/Makeup and Decoration/Sub2/image1.webp',
+      'services images/Makeup and Decoration/Sub2/image2.jpeg',
+      'services images/Makeup and Decoration/Sub2/image3.jpeg',
+      'services images/Makeup and Decoration/Sub2/image4.jpeg',
+      'services images/Makeup and Decoration/Sub2/image5.jpeg',
+      'services images/Makeup and Decoration/Sub2/image6.webp'
     ]
   },
   {
@@ -42,12 +42,12 @@ const makeups = [
     image: 'src/assets/services images/Makeup and Decoration/pic2.jpg',
     description: 'Top-notch beauty services that crown you as the queen of the event.',
     images: [
-      'src/assets/services images/Makeup and Decoration/Sub3/image1.jpeg',
-      'src/assets/services images/Makeup and Decoration/Sub3/image2.webp',
-      'src/assets/services images/Makeup and Decoration/Sub3/image3.jpeg',
-      'src/assets/services images/Makeup and Decoration/Sub3/image4.webp',
-      'src/assets/services images/Makeup and Decoration/Sub3/image5.jpeg',
-      'src/assets/services images/Makeup and Decoration/Sub3/image6.jpeg'
+      'services images/Makeup and Decoration/Sub3/image1.jpeg',
+      'services images/Makeup and Decoration/Sub3/image2.webp',
+      'services images/Makeup and Decoration/Sub3/image3.jpeg',
+      'services images/Makeup and Decoration/Sub3/image4.webp',
+      'services images/Makeup and Decoration/Sub3/image5.jpeg',
+      'services images/Makeup and Decoration/Sub3/image6.jpeg'
     ]
   },
   {
@@ -58,12 +58,12 @@ const makeups = [
     image: 'src/assets/services images/Makeup and Decoration/pic3.jpeg',
     description: 'Affordable and high-quality makeup services for all your special occasions.',
     images: [
-      'src/assets/services images/Makeup and Decoration/Sub4/image1.jpeg',
-      'src/assets/services images/Makeup and Decoration/Sub4/image2.jpeg',
-      'src/assets/services images/Makeup and Decoration/Sub4/image3.jpeg',
-      'src/assets/services images/Makeup and Decoration/Sub4/image4.jpeg',
-      'src/assets/services images/Makeup and Decoration/Sub4/image5.jpeg',
-      'src/assets/services images/Makeup and Decoration/Sub4/image6.jpeg'
+      'services images/Makeup and Decoration/Sub4/image1.jpeg',
+      'services images/Makeup and Decoration/Sub4/image2.jpeg',
+      'services images/Makeup and Decoration/Sub4/image3.jpeg',
+      'services images/Makeup and Decoration/Sub4/image4.jpeg',
+      'services images/Makeup and Decoration/Sub4/image5.jpeg',
+      'services images/Makeup and Decoration/Sub4/image6.jpeg'
     ]
   }
 ];

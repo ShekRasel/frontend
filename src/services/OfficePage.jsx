@@ -7,28 +7,28 @@ const offices = [
     name: 'Corporate Bliss',
     emoji: '🏢',
     price: '45000 BDT',
-    image: 'src/assets/services images/Office/pic1.avif'
+    image: 'services images/Office/pic1.avif'
   },
   {
     id: 2,
     name: 'Executive Events',
     emoji: '🏢',
     price: '55000 BDT',
-    image: 'src/assets/services images/Office/pic2.avif'
+    image: 'services images/Office/pic2.avif'
   },
   {
     id: 3,
     name: 'Office Gala',
     emoji: '🏢',
     price: '60000 BDT',
-    image: 'src/assets/services images/Office/pic3.avif'
+    image: 'services images/Office/pic3.avif'
   },
   {
     id: 4,
     name: 'Business Bash',
     emoji: '🏢',
     price: '70000 BDT',
-    image: 'src/assets/services images/Office/pic4.avif'
+    image: 'services images/Office/pic4.avif'
   }
 ];
 

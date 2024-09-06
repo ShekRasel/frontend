@@ -7,28 +7,28 @@ const birthdays = [
     name: 'Dreamland Celebrations',
     emoji: '🎉',
     price: '25000 BDT',
-    image: 'src/assets/services images/Birthday/pic1.avif'
+    image: 'services images/Birthday/pic1.avif'
   },
   {
     id: 2,
     name: 'Joyful Parties',
     emoji: '🎉',
     price: '15000 BDT',
-    image: 'src/assets/services images/Birthday/pic2.avif'
+    image: 'services images/Birthday/pic2.avif'
   },
   {
     id: 3,
     name: 'Birthday Bash',
     emoji: '🎉',
     price: '20000 BDT',
-    image: 'src/assets/services images/Birthday/pic3.avif'
+    image: 'services images/Birthday/pic3.avif'
   },
   {
     id: 4,
     name: 'Party Time',
     emoji: '🎉',
     price: '18000 BDT',
-    image: 'src/assets/services images/Birthday/pic4.avif'
+    image: 'services images/Birthday/pic4.avif'
   }
 ];
 
