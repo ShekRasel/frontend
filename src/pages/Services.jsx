@@ -3,37 +3,37 @@ import { useNavigate } from 'react-router-dom';
 
 const services = [
   {
-    image: 'src/assets/services images/ceremony.avif',
+    image: 'services images/ceremony.avif',
     title: 'Ceremony Costume',
     description: 'We offer a range of clothing options for various events...',
     link: '/costume'
   },
   {
-    image: 'src/assets/services images/photography.avif',
+    image: 'services images/photography.avif',
     title: 'Photographer',
     description: 'We provide professional photographers who can capture...',
     link: '/photographer'
   },
   {
-    image: 'src/assets/services images/makeup.avif',
+    image: 'services images/makeup.avif',
     title: 'Makeup and Decoration planning',
     description: 'We offer the services of experienced makeup artists...',
     link: '/makeup'
   },
   {
-    image: 'src/assets/services images/venue food.avif',
+    image: 'services images/venue food.avif',
     title: 'Venue Reservation and food',
     description: 'We offer delightful event venues and exceptional food...',
     link: '/venue'
   },
   {
-    image: 'src/assets/services images/birthday.avif',
+    image: 'services images/birthday.avif',
     title: 'Birthday Party',
     description: 'We provide complete birthday party planning services...',
     link: '/birthday'
   },
   {
-    image: 'src/assets/services images/office.avif',
+    image: 'services images/office.avif',
     title: 'Office Organizing',
     description: 'Our office organizing services help plan corporate events...',
     link: '/office'
