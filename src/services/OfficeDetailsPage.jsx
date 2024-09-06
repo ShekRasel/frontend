@@ -12,12 +12,12 @@ const offices = [
     image: 'src/assets/services images/office/main1.jpg',
     description: 'A complete executive office setup including furniture, decor, and organization solutions.',
     images: [
-      'services images/office/sub1/image1.avif',
-      'services images/office/sub1/image2.avif',
-      'services images/office/sub1/image3.avif',
-      'services images/office/sub1/image4.avif',
-      'services images/office/sub1/image5.avif',
-      'services images/office/sub1/image6.avif'
+      'services images/Office/sub1/image1.avif',
+      'services images/Office/sub1/image2.avif',
+      'services images/Office/sub1/image3.avif',
+      'services images/Office/sub1/image4.avif',
+      'services images/Office/sub1/image5.avif',
+      'services images/Office/sub1/image6.avif'
     ]
   },
   {
@@ -28,12 +28,12 @@ const offices = [
     image: 'src/assets/services images/office/main2.jpg',
     description: 'A modern office setup ideal for tech startups with open spaces and innovative furniture.',
     images: [
-      'services images/office/sub2/image1.avif',
-      'services images/office/sub2/image2.avif',
-      'services images/office/sub2/image3.avif',
-      'services images/office/sub2/image4.avif',
-      'services images/office/sub2/image5.avif',
-      'services images/office/sub2/image6.avif'
+      'services images/Office/sub2/image1.avif',
+      'services images/Office/sub2/image2.avif',
+      'services images/Office/sub2/image3.avif',
+      'services images/Office/sub2/image4.avif',
+      'services images/Office/sub2/image5.avif',
+      'services images/Office/sub2/image6.avif'
     ]
   },
   {
@@ -44,12 +44,12 @@ const offices = [
     image: 'src/assets/services images/office/main3.jpg',
     description: 'A vibrant and dynamic workspace setup designed for creative teams.',
     images: [
-      'services images/office/sub3/image1.avif',
-      'services images/office/sub3/image2.avif',
-      'services images/office/sub3/image3.avif',
-      'services images/office/sub3/image4.avif',
-      'services images/office/sub3/image5.avif',
-      'services images/office/sub3/image6.avif'
+      'services images/Office/sub3/image1.avif',
+      'services images/Office/sub3/image2.avif',
+      'services images/Office/sub3/image3.avif',
+      'services images/Office/sub3/image4.avif',
+      'services images/Office/sub3/image5.avif',
+      'services images/Office/sub3/image6.avif'
     ]
   },
   {
@@ -60,12 +60,12 @@ const offices = [
     image: 'src/assets/services images/office/main4.jpg',
     description: 'A professional and sleek office design for corporate environments.',
     images: [
-      'services images/office/sub4/image1.avif',
-      'services images/office/sub4/image2.avif',
-      'services images/office/sub4/image3.avif',
-      'services images/office/sub4/image4.avif',
-      'services images/office/sub4/image5.avif',
-      'services images/office/sub4/image6.avif'
+      'services images/Office/sub4/image1.avif',
+      'services images/Office/sub4/image2.avif',
+      'services images/Office/sub4/image3.avif',
+      'services images/Office/sub4/image4.avif',
+      'services images/Office/sub4/image5.avif',
+      'services images/Office/sub4/image6.avif'
     ]
   },
 ];

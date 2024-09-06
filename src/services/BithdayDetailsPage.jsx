@@ -12,12 +12,12 @@ const birthdays = [
     image: 'src/assets/services images/birthday/main1.jpg',
     description: 'A magical princess-themed party package perfect for your little one.',
     images: [
-      'services images/birthday/sub1/image1.avif',
-      'services images/birthday/sub1/image2.avif',
-      'services images/birthday/sub1/image3.avif',
-      'services images/birthday/sub1/image4.avif',
-      'services images/birthday/sub1/image5.avif',
-      'services images/birthday/sub1/image6.avif'
+      'services images/Birthday/sub1/image1.avif',
+      'services images/Birthday/sub1/image2.avif',
+      'services images/Birthday/sub1/image3.avif',
+      'services images/Birthday/sub1/image4.avif',
+      'services images/Birthday/sub1/image5.avif',
+      'services images/Birthday/sub1/image6.avif'
     ]
   },
   {
@@ -28,12 +28,12 @@ const birthdays = [
     image: 'src/assets/services images/birthday/main2.jpg',
     description: 'An action-packed superhero-themed party package for your little heroes.',
     images: [
-      'services images/birthday/sub2/image1.avif',
-      'services images/birthday/sub2/image2.avif',
-      'services images/birthday/sub2/image3.avif',
-      'services images/birthday/sub2/image4.avif',
-      'services images/birthday/sub2/image5.avif',
-      'services images/birthday/sub2/image6.avif'
+      'services images/Birthday/sub2/image1.avif',
+      'services images/Birthday/sub2/image2.avif',
+      'services images/Birthday/sub2/image3.avif',
+      'services images/Birthday/sub2/image4.avif',
+      'services images/Birthday/sub2/image5.avif',
+      'services images/Birthday/sub2/image6.avif'
     ]
   },
   {
@@ -44,12 +44,12 @@ const birthdays = [
     image: 'src/assets/services images/birthday/main3.jpg',
     description: 'A wild jungle safari-themed party package for an adventurous celebration.',
     images: [
-      'services images/birthday/sub3/image1.avif',
-      'services images/birthday/sub3/image2.avif',
-      'services images/birthday/sub3/image3.avif',
-      'services images/birthday/sub3/image4.avif',
-      'services images/birthday/sub3/image5.avif',
-      'services images/birthday/sub3/image6.avif'
+      'services images/Birthday/sub3/image1.avif',
+      'services images/Birthday/sub3/image2.avif',
+      'services images/Birthday/sub3/image3.avif',
+      'services images/Birthday/sub3/image4.avif',
+      'services images/Birthday/sub3/image5.avif',
+      'services images/Birthday/sub3/image6.avif'
     ]
   },
   {
@@ -60,12 +60,12 @@ const birthdays = [
     image: 'src/assets/services images/birthday/main4.jpg',
     description: 'An enchanting under-the-sea-themed party package for an unforgettable birthday.',
     images: [
-      'services images/birthday/sub4/image1.avif',
-      'services images/birthday/sub4/image2.avif',
-      'services images/birthday/sub4/image3.avif',
-      'services images/birthday/sub4/image4.avif',
-      'services images/birthday/sub4/image5.avif',
-      'services images/birthday/sub4/image6.avif'
+      'services images/Birthday/sub4/image1.avif',
+      'services images/Birthday/sub4/image2.avif',
+      'services images/Birthday/sub4/image3.avif',
+      'services images/Birthday/sub4/image4.avif',
+      'services images/Birthday/sub4/image5.avif',
+      'services images/Birthday/sub4/image6.avif'
     ]
   },
 ];
