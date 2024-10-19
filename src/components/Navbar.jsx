@@ -58,7 +58,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center p-4">
         <div className="flex items-center">
           <Link to='/'><img src={logo} alt="Logo" className="h-10 rounded-full mr-4" /></Link>
-          <Link to='/'><div className=" text-2xl lg:text-3xl font-semibold italic" style={{ color }}>Event-Expert</div></Link>
+          <Link to='/'><div className=" text-2xl lg:text-3xl font-semibold italic md:hidden xl:block" style={{ color }}>Event-Expert</div></Link>
         </div>
         <div className="flex items-center space-x-4 lg:gap-6 ">
           <div className="hidden md:flex space-x-6 md:space-x-3 lg:gap-4 md:gap-1">
