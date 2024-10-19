@@ -41,11 +41,11 @@ const AddProduct = () => {
   };
 
   return (
-    <div className="container mx-auto py-12 flex justify-center font-serif">
-      <div className="max-w-4xl w-full px-6 py-8 bg-slate-200 rounded-lg shadow-md">
+    <div className="container mx-auto px-2 py-12 flex justify-center font-serif">
+      <div className="max-w-4xl w-full px-1 md:px-6 py-8 bg-slate-200 rounded-lg shadow-md">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-center">Add Product</h1>
         <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid  md:grid-cols-2 gap-2 md:gap-4">
             <div className="mb-4">
               <label htmlFor="nid" className="block text-gray-700 font-bold mb-2">NID No</label>
               <input
